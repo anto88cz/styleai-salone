@@ -105,7 +105,7 @@ export const SERVICES = [
     shortDescription:
       'Extension di alta qualità con capelli 100% naturali da singolo donatore. Lunghezza e volume immediati con risultato invisibile e super naturale. Color matching perfetto garantito.',
     description:
-      'Le nostre extension sono realizzate con capelli vergini da singolo donatore, applicati con tecniche professionali che rispettano la salute del capello. Offriamo cheratina, tape-in e weft cuciti, con un servizio di color matching perfetto.',
+      'Le nostre extension sono realizzate con capelli vergini da singolo donatore, applicati con la tecnica professionale Tape-In che rispetta la salute del capello. Sistema adesivo ultra-sottile per un risultato invisibile e naturale, con servizio di color matching perfetto.',
     benefits: [
       'Capelli vergini da singolo donatore di qualità premium',
       'Lunghezza e volume immediati',
