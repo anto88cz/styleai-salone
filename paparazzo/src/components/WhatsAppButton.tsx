@@ -6,8 +6,10 @@ import { trackWhatsAppClick } from '@/lib/whatsapp';
 
 export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const toggleVisibility = () => {
       if (window.scrollY > 300) {
         setIsVisible(true);
@@ -16,9 +18,15 @@ export default function WhatsAppButton() {
       }
     };
 
+    // Check initial scroll position
+    toggleVisibility();
+    
     window.addEventListener('scroll', toggleVisibility);
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
+
+  // Prevent hydration mismatch
+  if (!mounted) return null;
 
   const handleClick = () => {
     trackWhatsAppClick('floating_button');

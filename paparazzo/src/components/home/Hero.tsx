@@ -13,11 +13,7 @@ export default function Hero() {
 
       <Container className="relative z-10">
         <div className="mx-auto max-w-4xl text-center">
-          {/* Badge */}
-          <div className="mb-6 inline-flex items-center rounded-full bg-gold-500/20 px-4 py-2 text-sm font-medium text-gold-300 backdrop-blur-sm">
-            <span className="mr-2">✨</span>
-            Salone di Lusso a Catanzaro
-          </div>
+
 
           {/* Main Heading */}
           <h1 className="mb-6 animate-fade-in font-display text-5xl font-bold leading-tight md:text-7xl">
@@ -65,7 +61,7 @@ export default function Hero() {
               >
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
-              <span>Recensioni Eccellenti</span>
+              <span>Massima Trasparenza</span>
             </div>
             <div className="flex items-center">
               <svg
@@ -97,7 +93,7 @@ export default function Hero() {
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <span>Oltre 10 Anni di Esperienza</span>
+              <span>Oltre 30 Anni di Esperienza</span>
             </div>
           </div>
         </div>

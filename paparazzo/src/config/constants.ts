@@ -136,7 +136,7 @@ export const SERVICES = [
     ],
     duration: '4-8 ore',
     icon: '🎨',
-    image: '/images/services/color-correction.jpg',
+      image: '/images/services/color-correction-1.jpg',
   },
 ] as const;
 

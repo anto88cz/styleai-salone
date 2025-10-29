@@ -97,6 +97,14 @@ export default function Navbar() {
             >
               Contatti
             </Link>
+            
+            <Link
+              href="/admin"
+              className="text-xs text-gray-400 transition-colors hover:text-gold-400"
+              title="Amministrazione Blog"
+            >
+              ⚙️
+            </Link>
 
             <Button href={getWhatsAppLink()} variant="whatsapp" size="sm" external>
               <svg
@@ -186,6 +194,13 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contatti
+              </Link>
+              <Link
+                href="/admin"
+                className="text-xs text-gray-400"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                ⚙️ Amministrazione
               </Link>
               <Button href={getWhatsAppLink()} variant="whatsapp" fullWidth external>
                 Prenota su WhatsApp

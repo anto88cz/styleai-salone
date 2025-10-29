@@ -5,13 +5,18 @@ import Link from 'next/link';
 
 export default function CookieBanner() {
   const [showBanner, setShowBanner] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const consent = localStorage.getItem('cookie-consent');
     if (!consent) {
       setShowBanner(true);
     }
   }, []);
+
+  // Prevent hydration mismatch
+  if (!mounted) return null;
 
   const acceptCookies = () => {
     localStorage.setItem('cookie-consent', 'accepted');

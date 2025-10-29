@@ -22,7 +22,6 @@ export default function ServicesSection() {
               title={service.name}
               description={service.shortDescription}
               icon={service.icon}
-              href={`/servizi/${service.slug}`}
             >
               <Button href={`/servizi/${service.slug}`} variant="primary" fullWidth>
                 Scopri di più
