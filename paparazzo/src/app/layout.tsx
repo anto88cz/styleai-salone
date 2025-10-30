@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: 'Paparazzo Parrucchieri',
     title: 'Paparazzo Parrucchieri | Salone di Lusso a Catanzaro',
     description:
-      'Salone specializzato in Nanoplastia, Hair Extensions e Color Correction. Lusso e tecnica per i tuoi capelli.',
+      'Salone specializzato in Nanoplastia, Hair Extensions e Color Correction. Arte e tecnica per i tuoi capelli.',
   },
   twitter: {
     card: 'summary_large_image',

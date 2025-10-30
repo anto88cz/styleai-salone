@@ -192,7 +192,7 @@ export default function GallerySection() {
           <p className="text-gray-600">
             Vuoi vedere più trasformazioni? Seguici su{' '}
             <a
-              href="https://instagram.com/paparazzo_parrucchieri"
+              href="https://www.instagram.com/paparazzoparrucchieri/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-gold-600 hover:text-gold-700"

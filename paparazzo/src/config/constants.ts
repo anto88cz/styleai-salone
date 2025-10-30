@@ -4,7 +4,7 @@
 
 export const BUSINESS = {
   name: 'Paparazzo Parrucchieri',
-  tagline: 'Lusso e tecnica per i tuoi capelli a Catanzaro',
+  tagline: 'Arte e tecnica per i tuoi capelli a Catanzaro',
   description:
     'Salone di lusso specializzato in Nanoplastia, Hair Extensions e Color Correction. Esperienza su misura nel cuore di Catanzaro.',
   
@@ -95,7 +95,7 @@ export const SERVICES = [
       'Effetto naturale e morbido al tatto',
     ],
     duration: '2-4 ore',
-    icon: '💫',
+    icon: '✨',
     image: '/images/services/nanoplastia-1.jpg',
   },
   {
@@ -115,7 +115,7 @@ export const SERVICES = [
       'Risultato naturale e invisibile',
     ],
     duration: '90 minuti',
-    icon: '💁‍♀️',
+    icon: '💎',
     image: '/images/services/extensions.jpg',
   },
   {

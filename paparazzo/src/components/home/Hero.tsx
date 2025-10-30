@@ -17,7 +17,7 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="mb-6 animate-fade-in font-display text-5xl font-bold leading-tight md:text-7xl">
-            Lusso e Tecnica
+            Arte e Tecnica
             <br />
             <span className="bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 bg-clip-text text-transparent">
               Per i Tuoi Capelli

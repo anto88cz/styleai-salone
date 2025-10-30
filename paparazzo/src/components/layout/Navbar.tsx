@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BUSINESS, SERVICES } from '@/config/constants';
 import Button from '@/components/ui/Button';
 import { getWhatsAppLink } from '@/lib/whatsapp';
@@ -15,14 +16,14 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-3xl">✂️</span>
-            <div className="flex flex-col">
-              <span className="font-display text-xl font-bold leading-tight text-gray-900">
-                Paparazzo
-              </span>
-              <span className="text-xs uppercase tracking-wider text-gold-600">Parrucchieri</span>
-            </div>
+          <Link href="/" className="relative h-20 w-64">
+            <Image
+              src="/images/Marchio.jpg"
+              alt="Paparazzo Parrucchieri - from hair to heart"
+              fill
+              className="object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Menu */}
