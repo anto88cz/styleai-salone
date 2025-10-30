@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Container from '@/components/ui/Container';
 import Section from '@/components/ui/Section';
 import Button from '@/components/ui/Button';
@@ -7,7 +7,7 @@ import { getWhatsAppLink } from '@/lib/whatsapp';
 export const metadata: Metadata = {
   title: 'Color Correction Catanzaro | Correzione Colore Capelli Danneggiati',
   description:
-    'Specialisti in correzione colore a Catanzaro. Recupero capelli danneggiati, transizione dal nero, rimozione pigmenti indesiderati. Tecnica professionale con prodotti premium Olaplex.',
+    'Specialisti in correzione colore a Catanzaro. Recupero capelli danneggiati, transizione dal nero, rimozione pigmenti indesiderati. Tecnica professionale con prodotti premium performanti.',
   keywords: [
     'color correction catanzaro',
     'correzione colore capelli catanzaro',
@@ -19,29 +19,29 @@ export const metadata: Metadata = {
 
 const FAQ = [
   {
-    question: 'Cos\'è la color correction e quando serve?',
+    question: 'Cos\'Ã¨ la color correction e quando serve?',
     answer:
-      'La color correction è un trattamento professionale avanzato per correggere colorazioni sbagliate, rimuovere pigmenti indesiderati (verde, arancione, giallo ottone) o recuperare capelli danneggiati da trattamenti fai-da-te. Serve quando il colore attuale non corrisponde al risultato desiderato o quando i capelli presentano più tonalità disomogenee.',
+      'La color correction Ã¨ un trattamento professionale avanzato per correggere colorazioni sbagliate, rimuovere pigmenti indesiderati (verde, arancione, giallo ottone) o recuperare capelli danneggiati da trattamenti fai-da-te. Serve quando il colore attuale non corrisponde al risultato desiderato o quando i capelli presentano piÃ¹ tonalitÃ  disomogenee.',
   },
   {
     question: 'Quanto tempo richiede una correzione colore?',
     answer:
-      'Dipende dalla condizione di partenza e dall\'obiettivo finale. Una correzione semplice richiede 3-5 ore, mentre casi complessi (es. transizione da nero a biondo) possono richiedere 6-8 ore o essere suddivisi in più sessioni per preservare la salute dei capelli. Durante la consulenza valutiamo insieme i tempi necessari.',
+      'Dipende dalla condizione di partenza e dall\'obiettivo finale. Una correzione semplice richiede 3-5 ore, mentre casi complessi (es. transizione da nero a biondo) possono richiedere 6-8 ore o essere suddivisi in piÃ¹ sessioni per preservare la salute dei capelli. Durante la consulenza valutiamo insieme i tempi necessari.',
   },
   {
     question: 'La color correction danneggia i capelli?',
     answer:
-      'Con la tecnica professionale corretta, prodotti premium (Olaplex, Wellaplex) e un colorista esperto, i danni sono minimizzati. Lavoriamo con protocolli specifici che proteggono la fibra capillare durante il processo. È fondamentale evitare decolorazioni aggressive fai-da-te che possono compromettere irreparabilmente i capelli.',
+      'Con la tecnica professionale corretta, prodotti premium performanti e un colorista esperto, i danni sono minimizzati. Lavoriamo con protocolli specifici che proteggono la fibra capillare durante il processo. Ãˆ fondamentale evitare decolorazioni aggressive fai-da-te che possono compromettere irreparabilmente i capelli.',
   },
   {
     question: 'Posso passare dal nero al biondo in una seduta?',
     answer:
-      'Dipende dallo stato di salute dei capelli e dal tipo di nero (naturale, tintura, hennè). In molti casi è necessario procedere gradualmente in 2-3 sessioni distanziate per preservare l\'integrità del capello. Una transizione forzata in una sola seduta rischia di causare danni irreversibili. Valutiamo la strategia migliore durante la consulenza.',
+      'Dipende dallo stato di salute dei capelli e dal tipo di nero (naturale, tintura, hennÃ¨). In molti casi Ã¨ necessario procedere gradualmente in 2-3 sessioni distanziate per preservare l\'integritÃ  del capello. Una transizione forzata in una sola seduta rischia di causare danni irreversibili. Valutiamo la strategia migliore durante la consulenza.',
   },
   {
     question: 'Quanto costa una color correction?',
     answer:
-      'Il costo varia in base alla complessità del caso, lunghezza dei capelli, prodotti necessari e numero di sessioni. Parte da €150 per correzioni semplici fino a €400+ per transizioni complete. Durante la consulenza gratuita ti forniamo un preventivo dettagliato e personalizzato senza impegno.',
+      'Il costo varia in base alla complessitÃ  del caso, lunghezza dei capelli, prodotti necessari e numero di sessioni. Parte da â‚¬150 per correzioni semplici fino a â‚¬400+ per transizioni complete. Durante la consulenza gratuita ti forniamo un preventivo dettagliato e personalizzato senza impegno.',
   },
   {
     question: 'Come mantenere il risultato dopo la correzione?',
@@ -59,7 +59,7 @@ export default function ColorCorrectionPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col justify-center">
               <div className="mb-4 inline-flex w-fit items-center rounded-full bg-gold-500 px-4 py-2 text-sm font-medium text-white">
-                <span className="mr-2">🎨</span>
+                <span className="mr-2">ðŸŽ¨</span>
                 Specialisti Correzione Colore
               </div>
 
@@ -69,13 +69,11 @@ export default function ColorCorrectionPage() {
                 <span className="text-gold-600">Professionale</span>
               </h1>
 
-              <p className="mb-8 text-xl leading-relaxed text-gray-600">
-                Recuperiamo anche i casi più complessi: colorazioni sbagliate, capelli danneggiati,
-                transizioni dal nero, rimozione pigmenti indesiderati. Tecnica avanzata con Olaplex
-                per risultati perfetti senza compromettere la salute dei capelli.
-              </p>
-
-              <div className="flex flex-wrap gap-4">
+                <p className="mb-8 text-xl leading-relaxed text-gray-600">
+                  Recuperiamo anche i casi piÃ¹ complessi: colorazioni sbagliate, capelli danneggiati,
+                  transizioni dal nero, rimozione pigmenti indesiderati. Tecnica avanzata con prodotti performanti
+                  per risultati perfetti senza compromettere la salute dei capelli.
+                </p>              <div className="flex flex-wrap gap-4">
                 <Button
                   href={getWhatsAppLink('Vorrei una consulenza per la Color Correction')}
                   variant="whatsapp"
@@ -94,7 +92,7 @@ export default function ColorCorrectionPage() {
               <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-gradient-to-br from-gold-100 to-gold-200 shadow-2xl">
                 <div className="flex h-full items-center justify-center">
                   <div className="text-center">
-                    <div className="mb-4 text-8xl">🎨</div>
+                    <div className="mb-4 text-8xl">ðŸŽ¨</div>
                     <p className="text-2xl font-bold text-gray-700">Color Correction</p>
                     <p className="text-gray-600">Recupero Colore Professionale</p>
                   </div>
@@ -116,32 +114,32 @@ export default function ColorCorrectionPage() {
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                icon: '🟤➡️👱‍♀️',
+                icon: 'ðŸŸ¤âž¡ï¸ðŸ‘±â€â™€ï¸',
                 title: 'Transizione dal Nero',
                 desc: 'Da bruno scuro/nero a biondo, caramello o balayage con tecnica graduale sicura',
               },
               {
-                icon: '🟧',
+                icon: 'ðŸŸ§',
                 title: 'Rimozione Riflessi Arancioni',
                 desc: 'Eliminazione toni ottoni indesiderati e neutralizzazione pigmenti caldi',
               },
               {
-                icon: '🟢',
+                icon: 'ðŸŸ¢',
                 title: 'Correzione Riflessi Verdi',
                 desc: 'Rimozione pigmenti verdi da decolorazioni o colorazioni su cenere',
               },
               {
-                icon: '🎭',
+                icon: 'ðŸŽ­',
                 title: 'Colori Disomogenei',
-                desc: 'Uniformazione di capelli con più tonalità, ricrescite evidenti, chiazze',
+                desc: 'Uniformazione di capelli con piÃ¹ tonalitÃ , ricrescite evidenti, chiazze',
               },
               {
-                icon: '💔',
+                icon: 'ðŸ’”',
                 title: 'Capelli Danneggiati',
                 desc: 'Recupero struttura dopo trattamenti aggressivi, decolorazioni fai-da-te',
               },
               {
-                icon: '❌',
+                icon: 'âŒ',
                 title: 'Colorazioni Sbagliate',
                 desc: 'Correzione tinta troppo scura, troppo chiara, tono sbagliato',
               },
@@ -174,38 +172,38 @@ export default function ColorCorrectionPage() {
               {
                 number: '01',
                 title: 'Diagnosi Completa',
-                desc: 'Analizziamo la condizione attuale: porosità, elasticità, storia colorazioni precedenti, pigmenti presenti. Valutiamo la fattibilità e definiamo il piano d\'azione.',
-                icon: '🔬',
+                desc: 'Analizziamo la condizione attuale: porositÃ , elasticitÃ , storia colorazioni precedenti, pigmenti presenti. Valutiamo la fattibilitÃ  e definiamo il piano d\'azione.',
+                icon: 'ðŸ”¬',
               },
               {
                 number: '02',
                 title: 'Test di Prova',
                 desc: 'Eseguiamo test su ciocche campione per prevedere la reazione e aggiustare la formula. Verifichiamo tempi di posa e concentrazione prodotti.',
-                icon: '🧪',
+                icon: 'ðŸ§ª',
               },
               {
                 number: '03',
                 title: 'Preparazione Capelli',
-                desc: 'Applicazione trattamenti pre-decolorazione (Olaplex Step 1) per proteggere i legami della cheratina durante il processo chimico.',
-                icon: '🛡️',
+                desc: 'Applicazione trattamenti pre-decolorazione con prodotti performanti per proteggere i legami della cheratina durante il processo chimico.',
+                icon: 'ðŸ›¡ï¸',
               },
               {
                 number: '04',
                 title: 'Correzione Graduale',
                 desc: 'Rimozione pigmenti indesiderati con tecniche mirate (decapaggio, decolorazione controllata, toner specifici). Procediamo per gradi rispettando i capelli.',
-                icon: '🎨',
+                icon: 'ðŸŽ¨',
               },
               {
                 number: '05',
                 title: 'Tonalizzazione Finale',
                 desc: 'Applicazione del colore definitivo con toner professionali per neutralizzare sottotoni e ottenere la nuance desiderata. Sigillatura con trattamenti ricostruttivi.',
-                icon: '✨',
+                icon: 'âœ¨',
               },
               {
                 number: '06',
                 title: 'Piano Mantenimento',
                 desc: 'Forniamo schema di manutenzione personalizzato: prodotti specifici, frequenza ritocchi, protezione colore. Follow-up incluso.',
-                icon: '📋',
+                icon: 'ðŸ“‹',
               },
             ].map((step, index) => (
               <div
@@ -231,12 +229,12 @@ export default function ColorCorrectionPage() {
           <div className="mt-12 space-y-6">
             {[
               {
-                name: 'Olaplex',
+                name: 'Prodotti Performanti Premium',
                 desc: 'Sistema di protezione dei legami della cheratina in 3 fasi. Previene rotture e danni durante decolorazioni e colorazioni aggressive. Ricostruisce la struttura dall\'interno.',
               },
               {
-                name: 'Wellaplex',
-                desc: 'Tecnologia bond-building per capelli più forti e sani. Riduce i danni chimici fino al 94%. Ideale per transizioni complesse e capelli fragili.',
+                name: 'Tecnologia Bond-Building',
+                desc: 'Tecnologia bond-building per capelli piÃ¹ forti e sani. Riduce i danni chimici fino al 94%. Ideale per transizioni complesse e capelli fragili.',
               },
               {
                 name: 'Redken Shades EQ',
@@ -244,7 +242,7 @@ export default function ColorCorrectionPage() {
               },
               {
                 name: 'Wella Blondor',
-                desc: 'Decolorante professionale di ultima generazione con tecnologia anti-giallo. Schiarisce fino a 7 toni preservando la qualità del capello.',
+                desc: 'Decolorante professionale di ultima generazione con tecnologia anti-giallo. Schiarisce fino a 7 toni preservando la qualitÃ  del capello.',
               },
             ].map((product, index) => (
               <div
@@ -252,7 +250,7 @@ export default function ColorCorrectionPage() {
                 className="flex items-start rounded-2xl bg-gradient-to-r from-gold-50 to-white p-6 shadow-md"
               >
                 <div className="mr-4 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-gold-500 text-2xl text-white">
-                  💎
+                  ðŸ’Ž
                 </div>
                 <div>
                   <h3 className="mb-2 font-display text-xl font-bold text-gray-900">
@@ -266,11 +264,11 @@ export default function ColorCorrectionPage() {
 
           <div className="mt-12 rounded-2xl bg-gold-50 p-6 text-center">
             <p className="text-lg font-medium text-gray-800">
-              <span className="text-gold-600">✓</span> Solo prodotti professionali originali
+              <span className="text-gold-600">âœ“</span> Solo prodotti professionali originali
               <br />
-              <span className="text-gold-600">✓</span> Nessun prodotto da supermercato o fai-da-te
+              <span className="text-gold-600">âœ“</span> Nessun prodotto da supermercato o fai-da-te
               <br />
-              <span className="text-gold-600">✓</span> Formule personalizzate per ogni caso
+              <span className="text-gold-600">âœ“</span> Formule personalizzate per ogni caso
             </p>
           </div>
         </Container>
@@ -286,7 +284,7 @@ export default function ColorCorrectionPage() {
                   Specialisti del Biondo Perfetto
                 </h2>
                 <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                  La transizione verso tonalità bionde richiede competenze tecniche avanzate.
+                  La transizione verso tonalitÃ  bionde richiede competenze tecniche avanzate.
                   Siamo specializzati in:
                 </p>
                 <ul className="space-y-4">
@@ -320,7 +318,7 @@ export default function ColorCorrectionPage() {
                   <div className="aspect-square w-64 overflow-hidden rounded-full bg-gradient-to-br from-gold-200 via-gold-100 to-white shadow-2xl">
                     <div className="flex h-full items-center justify-center">
                       <div className="text-center">
-                        <div className="mb-2 text-6xl">👱‍♀️</div>
+                        <div className="mb-2 text-6xl">ðŸ‘±â€â™€ï¸</div>
                         <p className="font-display text-2xl font-bold text-gray-800">
                           Biondo Perfetto
                         </p>
@@ -395,7 +393,7 @@ export default function ColorCorrectionPage() {
               </Button>
             </div>
             <p className="mt-6 text-sm text-gray-500">
-              Valutazione gratuita • Preventivo personalizzato • Garanzia risultato
+              Valutazione gratuita â€¢ Preventivo personalizzato â€¢ Garanzia risultato
             </p>
           </div>
         </Container>
@@ -403,3 +401,4 @@ export default function ColorCorrectionPage() {
     </>
   );
 }
+
