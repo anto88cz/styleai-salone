@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import Image from 'next/image';
 
 interface CardProps {
@@ -22,8 +22,7 @@ export default function Card({
   className = '',
   children,
 }: CardProps) {
-  const baseStyles =
-    'group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1';
+  const baseStyles = 'group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col';
 
   const content = (
     <>
@@ -37,7 +36,7 @@ export default function Card({
           />
         </div>
       )}
-      <div className="p-6">
+      <div className="p-6 flex flex-col h-full">
         {icon && !image && (
           <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-gold-400 to-gold-600 text-2xl shadow-lg">
             {icon}
@@ -45,7 +44,7 @@ export default function Card({
         )}
         <h3 className="mb-3 font-display text-2xl font-bold text-gray-900">{title}</h3>
         <p className="mb-4 text-gray-600 leading-relaxed">{description}</p>
-        {children}
+        <div className="mt-auto">{children}</div>
       </div>
     </>
   );
@@ -60,3 +59,5 @@ export default function Card({
 
   return <div className={`${baseStyles} ${className}`}>{content}</div>;
 }
+
+
