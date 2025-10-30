@@ -3,32 +3,17 @@ import Container from '@/components/ui/Container';
 import Section from '@/components/ui/Section';
 import Button from '@/components/ui/Button';
 import { formatDate } from '@/lib/date-utils';
+import { getAllPosts } from '@/lib/blog';
 
 export default async function BlogSection() {
-  // Placeholder blog posts - in production, fetch from CMS or file system
-  const latestPosts = [
-    {
-      slug: 'nanoplastia-vs-cheratina-differenze',
-      title: 'Nanoplastia vs Cheratina: Quale Scegliere?',
-      excerpt: 'Scopri le differenze tra Nanoplastia e trattamento alla cheratina per capire quale soluzione è migliore per i tuoi capelli.',
-      date: new Date('2025-01-15'),
-      category: 'Trattamenti',
-    },
-    {
-      slug: 'hair-extensions-guida-completa',
-      title: 'Hair Extensions: Guida Completa 2025',
-      excerpt: 'Tutto quello che devi sapere sulle extension: tipologie, applicazione, manutenzione e costi.',
-      date: new Date('2025-01-13'),
-      category: 'Extensions',
-    },
-    {
-      slug: 'color-correction-come-funziona',
-      title: 'Color Correction: Come Correggere un Colore Sbagliato',
-      excerpt: 'Hai fatto un colore sbagliato? Scopri come la color correction può salvare i tuoi capelli.',
-      date: new Date('2025-01-10'),
-      category: 'Colorazione',
-    },
-  ];
+  // Fetch real blog posts
+  const allPosts = getAllPosts();
+  const latestPosts = allPosts.slice(0, 3);
+
+  // Don't render the section if there are no posts
+  if (latestPosts.length === 0) {
+    return null;
+  }
 
   return (
     <Section background="white" padding="xl">
