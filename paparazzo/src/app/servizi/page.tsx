@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Container from '@/components/ui/Container';
 import Section from '@/components/ui/Section';
 import Card from '@/components/ui/Card';
@@ -58,7 +58,7 @@ export default function ServiziPage() {
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col">
                   <div className="mb-4 inline-flex items-center rounded-full bg-gold-100 px-4 py-2 text-sm font-medium text-gold-700">
                     <span className="mr-2">{service.icon}</span>
                     {service.name}
@@ -115,9 +115,8 @@ export default function ServiziPage() {
                     </div>
                   </div>
 
-                  <Button href={`/servizi/${service.slug}`} variant="primary" size="lg">
-                    Scopri Tutti i Dettagli
-                  </Button>
+                  <div className="mt-auto"><Button href={`/servizi/${service.slug}`} variant="primary" size="lg">
+                    Scopri Tutti i Dettagli</Button></div>
                 </div>
               </article>
             ))}
@@ -150,3 +149,5 @@ export default function ServiziPage() {
     </>
   );
 }
+
+
