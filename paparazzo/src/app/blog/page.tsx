@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Container from '@/components/ui/Container';
 import Section from '@/components/ui/Section';
-import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { getAllPosts, getAllCategories } from '@/lib/blog';
 import { formatDate } from '@/lib/date-utils';
@@ -88,7 +87,7 @@ export default function BlogPage() {
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {allPosts.map((post) => (
                   <Link key={post.slug} href={`/blog/${post.slug}`}>
-                    <Card hoverable className="h-full">
+                    <div className="h-full rounded-2xl bg-white p-6 shadow-lg transition-transform hover:scale-105">
                       {/* Image placeholder */}
                       <div className="mb-4 aspect-video overflow-hidden rounded-lg bg-gradient-to-br from-gold-100 to-gold-200">
                         <div className="flex h-full items-center justify-center">
@@ -117,7 +116,7 @@ export default function BlogPage() {
                         <span>By {post.author}</span>
                         {post.readTime && <span>{post.readTime}</span>}
                       </div>
-                    </Card>
+                    </div>
                   </Link>
                 ))}
               </div>
