@@ -1,5 +1,6 @@
 import Container from '@/components/ui/Container';
 import Button from '@/components/ui/Button';
+import Image from 'next/image';
 import { BUSINESS } from '@/config/constants';
 import { getWhatsAppLink } from '@/lib/whatsapp';
 
@@ -9,6 +10,19 @@ export default function Hero() {
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[url('/images/pattern.svg')] bg-repeat"></div>
+      </div>
+
+      {/* Logo Background */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-15">
+        <div className="relative h-[1200px] w-[1200px]">
+          <Image
+            src="/images/Marchio_trasparente.png"
+            alt="Paparazzo Logo"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
       </div>
 
       <Container className="relative z-10">

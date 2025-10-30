@@ -44,10 +44,15 @@ export function getCurrentDateInRome(): Date {
 export function formatBusinessHours(hours: {
   open: string | null;
   close: string | null;
+  closeAfternoon?: string | null;
+  reopenAfternoon?: string | null;
   closed: boolean;
 }): string {
   if (hours.closed) {
     return 'Chiuso';
+  }
+  if (hours.closeAfternoon && hours.reopenAfternoon) {
+    return `${hours.open} - ${hours.close} / ${hours.closeAfternoon} - ${hours.reopenAfternoon}`;
   }
   return `${hours.open} - ${hours.close}`;
 }

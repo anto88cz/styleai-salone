@@ -12,14 +12,14 @@ export default function LocationSection() {
           <div className="order-2 lg:order-1">
             <div className="overflow-hidden rounded-2xl shadow-2xl">
               <iframe
-                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.${BUSINESS.coordinates.lat}!2d${BUSINESS.coordinates.lng}!3d${BUSINESS.coordinates.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM${BUSINESS.coordinates.lat}!5e0!3m2!1sit!2sit!4v1234567890`}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.8447826891835!2d16.585458376536404!3d38.90980997171524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13131f9b3f8a5a65%3A0x5f5f5f5f5f5f5f5f!2sVia%20Formia%2C%2047%2C%2088100%20Catanzaro%20CZ!5e0!3m2!1sit!2sit!4v1730000000000!5m2!1sit!2sit"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Mappa Paparazzo Parrucchieri"
+                title="Mappa Paparazzo Parrucchieri - Via Formia 47, Catanzaro"
               ></iframe>
             </div>
           </div>
@@ -93,17 +93,17 @@ export default function LocationSection() {
                 <div>
                   <h3 className="mb-2 font-semibold text-gray-900">Orari</h3>
                   <ul className="space-y-1 text-gray-600">
-                    <li>Lun - Ven: 09:00 - 19:00</li>
-                    <li>Sabato: 09:00 - 18:00</li>
-                    <li>Domenica: Chiuso</li>
+                    <li>Mar - Ven: 09:00 - 13:00 / 15:00 - 19:00</li>
+                    <li>Sabato: 09:00 - 18:30</li>
+                    <li>Lunedì e Domenica: Chiuso</li>
                   </ul>
                 </div>
               </div>
             </div>
 
             <div className="mt-8">
-              <Button href="/dove-siamo" variant="primary" size="lg">
-                Come Raggiungerci
+              <Button href="/contatti" variant="primary" size="lg">
+                Contattaci
               </Button>
             </div>
           </div>

@@ -87,10 +87,10 @@ export default function Navbar() {
               Blog
             </Link>
             <Link
-              href="/dove-siamo"
+              href="/corsi"
               className="font-medium text-gray-700 transition-colors hover:text-gold-600"
             >
-              Dove Siamo
+              Corsi
             </Link>
             <Link
               href="/contatti"
@@ -183,11 +183,11 @@ export default function Navbar() {
                 Blog
               </Link>
               <Link
-                href="/dove-siamo"
+                href="/corsi"
                 className="font-medium text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Dove Siamo
+                Corsi
               </Link>
               <Link
                 href="/contatti"

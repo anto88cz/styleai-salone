@@ -34,12 +34,12 @@ export const BUSINESS = {
   
   // Business Hours
   hours: {
-    monday: { open: '09:00', close: '19:00', closed: false },
-    tuesday: { open: '09:00', close: '19:00', closed: false },
-    wednesday: { open: '09:00', close: '19:00', closed: false },
-    thursday: { open: '09:00', close: '19:00', closed: false },
-    friday: { open: '09:00', close: '19:00', closed: false },
-    saturday: { open: '09:00', close: '18:00', closed: false },
+    monday: { open: null, close: null, closed: true },
+    tuesday: { open: '09:00', close: '13:00', closeAfternoon: '15:00', reopenAfternoon: '19:00', closed: false },
+    wednesday: { open: '09:00', close: '13:00', closeAfternoon: '15:00', reopenAfternoon: '19:00', closed: false },
+    thursday: { open: '09:00', close: '13:00', closeAfternoon: '15:00', reopenAfternoon: '19:00', closed: false },
+    friday: { open: '09:00', close: '13:00', closeAfternoon: '15:00', reopenAfternoon: '19:00', closed: false },
+    saturday: { open: '09:00', close: '18:30', closed: false },
     sunday: { open: null, close: null, closed: true },
   },
   

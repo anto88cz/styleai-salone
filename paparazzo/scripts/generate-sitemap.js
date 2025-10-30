@@ -16,7 +16,7 @@ const staticPages = [
   { url: '/servizi/hair-extensions', priority: '0.9', changefreq: 'monthly' },
   { url: '/servizi/color-correction', priority: '0.9', changefreq: 'monthly' },
   { url: '/blog', priority: '0.8', changefreq: 'daily' },
-  { url: '/dove-siamo', priority: '0.7', changefreq: 'monthly' },
+  { url: '/corsi', priority: '0.8', changefreq: 'monthly' },
   { url: '/contatti', priority: '0.7', changefreq: 'monthly' },
   { url: '/privacy', priority: '0.3', changefreq: 'yearly' },
   { url: '/cookie', priority: '0.3', changefreq: 'yearly' },

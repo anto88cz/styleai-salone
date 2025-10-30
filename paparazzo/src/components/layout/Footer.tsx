@@ -40,8 +40,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/dove-siamo" className="transition-colors hover:text-gold-400">
-                  Dove Siamo
+                <Link href="/corsi" className="transition-colors hover:text-gold-400">
+                  Corsi
                 </Link>
               </li>
               <li>
@@ -138,9 +138,9 @@ export default function Footer() {
             <h3 className="mb-4 font-display text-lg font-semibold text-white">Orari</h3>
             <ul className="space-y-2 text-sm">
               <li className="flex justify-between">
-                <span>Lun - Ven:</span>
+                <span>Mar - Ven:</span>
                 <span className="font-medium text-white">
-                  {formatBusinessHours(BUSINESS.hours.monday)}
+                  {formatBusinessHours(BUSINESS.hours.tuesday)}
                 </span>
               </li>
               <li className="flex justify-between">
@@ -150,7 +150,7 @@ export default function Footer() {
                 </span>
               </li>
               <li className="flex justify-between">
-                <span>Domenica:</span>
+                <span>Lun e Dom:</span>
                 <span className="font-medium text-white">
                   {formatBusinessHours(BUSINESS.hours.sunday)}
                 </span>

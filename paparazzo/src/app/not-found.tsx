@@ -77,14 +77,14 @@ export default function NotFound() {
             </Link>
 
             <Link
-              href="/dove-siamo"
+              href="/corsi"
               className="group rounded-2xl bg-gray-50 p-6 text-center transition-all hover:-translate-y-2 hover:bg-gold-50 hover:shadow-xl"
             >
-              <div className="mb-4 text-4xl">📍</div>
+              <div className="mb-4 text-4xl">🎓</div>
               <h3 className="mb-2 font-display text-xl font-bold text-gray-900 group-hover:text-gold-600">
-                Dove Siamo
+                Corsi
               </h3>
-              <p className="text-sm text-gray-600">Come raggiungerci e orari di apertura</p>
+              <p className="text-sm text-gray-600">Masterclass Hair Extensions</p>
             </Link>
 
             <Link

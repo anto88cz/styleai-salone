@@ -83,10 +83,7 @@ export default function ContattiPage() {
             </a>
 
             {/* Visit */}
-            <a
-              href="/dove-siamo"
-              className="group rounded-2xl bg-gradient-to-br from-gold-50 to-gold-100 p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl"
-            >
+            <div className="group rounded-2xl bg-gradient-to-br from-gold-50 to-gold-100 p-6 text-center shadow-lg">
               <div className="mb-4 text-5xl">📍</div>
               <h3 className="mb-2 font-display text-xl font-bold text-gray-900">Vieni a Trovarci</h3>
               <p className="mb-3 text-sm text-gray-600">Siamo in centro</p>
@@ -96,9 +93,9 @@ export default function ContattiPage() {
                 {BUSINESS.address.city}
               </p>
               <div className="mt-4 inline-block rounded-full bg-gold-500 px-4 py-2 text-sm font-medium text-white">
-                Vedi Mappa →
+                Indirizzo
               </div>
-            </a>
+            </div>
           </div>
         </Container>
       </Section>
@@ -109,17 +106,18 @@ export default function ContattiPage() {
           <h2 className="section-heading text-center">Orari di Apertura</h2>
           <div className="mt-12 rounded-2xl bg-white p-8 shadow-xl md:p-12">
             <div className="space-y-4">
-              {Object.entries(BUSINESS.hours).map(([day, hours]) => (
-                <div
-                  key={day}
-                  className="flex items-center justify-between border-b border-gray-100 pb-4 last:border-0 last:pb-0"
-                >
-                  <span className="font-display text-lg font-bold capitalize text-gray-900">
-                    {day}
-                  </span>
-                  <span className="text-lg text-gray-700">{hours}</span>
-                </div>
-              ))}
+              <div className="flex items-center justify-between border-b border-gray-100 pb-4">
+                <span className="font-display text-lg font-bold text-gray-900">Martedì - Venerdì</span>
+                <span className="text-lg text-gray-700">09:00 - 13:00 / 15:00 - 19:00</span>
+              </div>
+              <div className="flex items-center justify-between border-b border-gray-100 pb-4">
+                <span className="font-display text-lg font-bold text-gray-900">Sabato</span>
+                <span className="text-lg text-gray-700">09:00 - 18:30</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="font-display text-lg font-bold text-gray-900">Lunedì e Domenica</span>
+                <span className="text-lg text-gray-700">Chiuso</span>
+              </div>
             </div>
 
             <div className="mt-8 rounded-xl bg-gold-50 p-6 text-center">

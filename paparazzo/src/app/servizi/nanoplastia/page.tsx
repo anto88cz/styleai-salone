@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Container from '@/components/ui/Container';
 import Section from '@/components/ui/Section';
 import Button from '@/components/ui/Button';
 import { getWhatsAppLink } from '@/lib/whatsapp';
 
 export const metadata: Metadata = {
-  title: 'Nanoplastia Catanzaro | Trattamento Lisciante Senza Formaldeide',
+  title: 'Nanoplastia Catanzaro | Trattamento Lisciante Senza Formaldeide a base di collagene',
   description:
-    'Scopri la Nanoplastia da Paparazzo Parrucchieri: trattamento brasiliano rivoluzionario senza formaldeide. Capelli lisci, luminosi e sani fino a 5 mesi. Prenota ora!',
+    'Scopri la Nanoplastia da Paparazzo Parrucchieri: trattamento rivoluzionario senza formaldeide. Capelli lisci, luminosi e sani fino a 5 mesi. Prenota ora!',
   keywords: [
     'nanoplastia catanzaro',
     'trattamento lisciante catanzaro',
@@ -26,7 +27,7 @@ const FAQ = [
   {
     question: 'Quanto dura l\'effetto della Nanoplastia?',
     answer:
-      'L\'effetto della Nanoplastia dura tipicamente tra i 4 e i 6 mesi, a seconda del tipo di capello e della cura post-trattamento. Con una manutenzione adeguata e l\'utilizzo di prodotti professionali, i risultati possono durare anche più a lungo.',
+      'L\'effetto della Nanoplastia dura tipicamente tra i 6 e 8 mesi, a seconda del tipo di capello e della cura post-trattamento. Con una manutenzione adeguata e l\'utilizzo di prodotti professionali, i risultati possono durare anche più a lungo.',
   },
   {
     question: 'La Nanoplastia rovina i capelli?',
@@ -41,7 +42,7 @@ const FAQ = [
   {
     question: 'Quanto costa la Nanoplastia?',
     answer:
-      'Il costo varia in base alla lunghezza e alla densità dei capelli. Contattaci su WhatsApp per un preventivo personalizzato gratuito. Offriamo anche pacchetti con scontistica per trattamenti combinati.',
+      'Il costo varia in base alla lunghezza e alla densità dei capelli. Contattaci su WhatsApp per un preventivo personalizzato gratuito. Offriamo anche pagamenti in 3 rate con circuito Klarna.',
   },
 ];
 
@@ -65,9 +66,9 @@ export default function NanoplastiaPage() {
               </h1>
 
               <p className="mb-8 text-xl leading-relaxed text-gray-600">
-                Il trattamento brasiliano di nuova generazione che ricostruisce i capelli
+                Il trattamento di nuova generazione che ricostruisce i capelli
                 dall'interno, eliminando il crespo e donando lucentezza straordinaria. Risultati
-                naturali che durano fino a 5 mesi.
+                naturali che durano fino a 7 mesi.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -82,14 +83,13 @@ export default function NanoplastiaPage() {
 
             <div className="relative">
               <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-gradient-to-br from-gold-100 to-gold-200 shadow-2xl">
-                {/* Placeholder */}
-                <div className="flex h-full items-center justify-center">
-                  <div className="text-center">
-                    <div className="mb-4 text-8xl">💫</div>
-                    <p className="text-2xl font-bold text-gray-700">Nanoplastia</p>
-                    <p className="text-gray-600">Prima & Dopo</p>
-                  </div>
-                </div>
+                <Image
+                  src="/images/services/nanoplastia-4.jpg"
+                  alt="Nanoplastia - Prima e Dopo"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function NanoplastiaPage() {
               {
                 icon: '✨',
                 title: 'Elimina il Crespo',
-                desc: 'Fino a 5 mesi di capelli perfettamente lisci e disciplinati',
+                desc: 'Fino a 7 mesi di capelli perfettamente lisci e disciplinati',
               },
               {
                 icon: '💎',
@@ -188,28 +188,24 @@ export default function NanoplastiaPage() {
                 title: 'Analisi e Consulenza',
                 desc: 'Valutiamo la struttura del capello e le tue esigenze per personalizzare il trattamento.',
               },
+              
               {
                 step: '02',
-                title: 'Preparazione',
-                desc: 'Lavaggio profondo con shampoo specifico per aprire le cuticole e preparare i capelli.',
-              },
-              {
-                step: '03',
                 title: 'Applicazione',
                 desc: 'Applichiamo il prodotto Nanoplastia ciocca per ciocca, assicurando una copertura uniforme.',
               },
               {
-                step: '04',
+                step: '03',
                 title: 'Posa e Asciugatura',
-                desc: 'Tempo di posa variabile (20-40 min), poi asciugatura professionale con phon.',
+                desc: 'Tempo di posa variabile (40-90 min), poi asciugatura professionale con phon.',
               },
               {
-                step: '05',
+                step: '04',
                 title: 'Sigillatura con Piastra',
                 desc: 'Utilizziamo la piastra professionale per sigillare il trattamento nella fibra capillare.',
               },
               {
-                step: '06',
+                step: '05',
                 title: 'Risultato Finale',
                 desc: 'Capelli lisci, luminosi e trasformati. Effetto immediato e duraturo!',
               },
@@ -244,7 +240,7 @@ export default function NanoplastiaPage() {
               <div>
                 <h4 className="mb-2 font-semibold text-gray-900">Durata del trattamento</h4>
                 <p className="text-gray-700">
-                  Il trattamento completo richiede <strong>2-3 ore</strong> a seconda della
+                  Il trattamento completo richiede <strong>4-6 ore</strong> a seconda della
                   lunghezza e densità dei capelli. Prenota con tranquillità, ci prendiamo tutto il
                   tempo necessario per un risultato perfetto.
                 </p>
@@ -311,9 +307,7 @@ export default function NanoplastiaPage() {
                 Vedi Altri Servizi
               </Button>
             </div>
-            <p className="mt-6 text-sm text-gray-500">
-              Prima consulenza sempre gratuita • Prodotti professionali inclusi
-            </p>
+            
           </div>
         </Container>
       </Section>
